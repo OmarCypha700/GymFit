@@ -78,6 +78,7 @@
 
 
 #shop__section{
+    margin-top: 5rem;
     padding: 3rem 1rem;
     background-color: #EFEEF0;
 }
@@ -102,7 +103,6 @@
  .product__info > P {
     font-size: 1.2rem;
     font-weight: 400;
-    /* color: #181616; */
  }
 
 
@@ -138,13 +138,9 @@
         width: 90%;
     }
 
-    .hero__text > h1{
+    /* .hero__text > h1{
         font-size: 2.5rem;
-    }
-
-    .hero__text > p{
-        font-size: 1.5rem;
-    }
+    } */
         
     /* Feature section css */
 
@@ -153,15 +149,10 @@
         margin-top: 10rem;
     }
 
-    .feature__copy > h1{
+    /* .feature__copy > h1{
         line-height: 15px;
         font-size: 2.5rem;
-    }
-
-    .feature__copy > p{
-        line-height: 15px;
-        font-size: 1.5rem;
-    }   
+    } */
 
     .feature{
         flex-direction: row;
