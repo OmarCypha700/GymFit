@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+body{
+    background: #F8F8F3;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#logo > li{
+    list-style: none;
+}
+
+#logo > li > a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#logo > a > img {
+    width: 70%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    /* z-index: 3; */
+}
+
+
+#mobile{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#navbar > li {
+    list-style: none;
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+#navbar > li > a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+button{
+    padding: 0.5rem;
+    background: #1a1a1a;
+    color: #F8F8F3;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query */
+
+@media (max-width:480px) {
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: fixed;
+        top: -1rem;
+        right: -500px;
+        height: 100vh;
+        width:100%;
+        background-color: #1a1a1a;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 5rem 1rem;
+        transition: 0.3s;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    #navbar > li > a{
+        text-decoration: none;
+        color: #F8F8F3;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: 0.3s ease;
+        line-height:36px;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar > li {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        color: #F8F8F3;
+       
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    .menu, #close {
+        display: initial;
+        position: absolute;
+        top: -1rem;
+        color: #F8F8F3;
+        
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 0.9rem;
+        left: 3rem;
+    }
+
+    button{
+        display: none;
+    }
+}
