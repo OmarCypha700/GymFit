@@ -29,7 +29,8 @@
     left: 0;
     right: 0;
     background-color: #F8F8F3;
-    /* z-index: 3; */
+    z-index: 3;
+    padding: 1rem 0;
 }
 
 #mobile{
