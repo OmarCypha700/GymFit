@@ -69,11 +69,17 @@
     padding: 0.6rem 1rem;
     background: #1a1a1a;
     color: #F8F8F3;
-    outline: none;
+    outline: 1px solid;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     margin-left: 3rem;
+    font-weight: 600;
+}
+
+#register:hover{
+    background-color: #F8F8F3;
+    color: #1a1a1a;
 }
 
 /* Media query */

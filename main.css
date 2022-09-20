@@ -36,10 +36,20 @@
     background-color: #F8F8F3;
 }
 
+.learn__more:hover{
+    background: #1a1a1a;
+    color: #F8F8F3;
+}
+
 .register{
     background: #1a1a1a;
     color: #F8F8F3;
-    
+}
+
+.register:hover{
+    outline: 1px solid ;
+    background-color: #F8F8F3;
+    color: #1a1a1a;
 }
 
 .hero__image{
