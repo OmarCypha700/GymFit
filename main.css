@@ -99,7 +99,7 @@
 
 #shop__section{
     margin-top: 5rem;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     background-color: #EFEEF0;
 }
 
@@ -125,6 +125,72 @@
     font-weight: 400;
  }
 
+/* Membership section css */
+
+#membership__section{
+    padding: 2rem 0;
+}
+
+#membership__section > h1 {
+    padding: 2rem;
+}
+
+.payments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.disable{
+    text-decoration: line-through;
+    color: #929292;
+}
+
+.normal{
+    background-color: #EFEEF0;
+}
+
+.dark{
+    background-color:#181616;
+    color:#F8F8F3;
+}
+
+.card{
+    border: 1px solid  #EFEEF0;
+    border-radius: 10px;
+    padding: 2rem 0rem;
+}
+
+.card > .btn{
+    display: flex;
+    align-items: center;
+}
+
+.get__plan{
+    border: 1px solid;
+    padding: 0.8rem 4rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.plan{
+    line-height: 5px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.plan > p{
+    font-size: 0.8rem;
+}
+
+.offers > li{
+    /* list-style: none; */
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
 /* Media Query */
 
@@ -223,5 +289,11 @@
         width: 40%;
     }
 
+
+    /* Membership section */
+
+    .card{
+        max-width: 30%;
+    }
 
 }
