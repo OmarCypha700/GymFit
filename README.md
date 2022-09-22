@@ -1,6 +1,6 @@
 # GymFit
 
-This is a landing page for a Gym center.
+This is a fully responsive web landing page for a Gym center.
 
 ## Mobile view
 ![Mobile view](./Screenshots/Mobile-view2.png)
@@ -28,6 +28,7 @@ This is a landing page for a Gym center.
 ### Built with
 
 - Semantic HTML5 markup
+-Mobile first design
 - CSS custom properties
 - Basic javasript
 
@@ -47,4 +48,4 @@ This project was deployed with
 - Twitter - [@OmarCypha](https://www.twitter.com/OmarCypha)
 
 ### Design by:
-Twitter - [@Daanielosas](https://twitter.com/Daanielosas?s=20&t=-0TIPeyZYPWfLKm8pElX4g)
+Twitter - [@Daanielosas](https://twitter.com/Daanielosas)
