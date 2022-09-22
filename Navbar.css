@@ -136,7 +136,7 @@
     }
 
     #close{
-        display: initial;
+        display: flex;
         position: absolute;
         top: 0.9rem;
         left: 3rem;

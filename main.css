@@ -174,7 +174,6 @@
     font-weight: 600;
 }
 
-
 .plan{
     line-height: 5px;
     padding: 1rem 2rem;
@@ -186,11 +185,88 @@
 }
 
 .offers > li{
-    /* list-style: none; */
+    list-style: none;
     line-height: 40px;
     font-size: 1.1rem;
     font-weight: 600;
 }
+
+/* CTA section css */
+
+#cta__section{
+    background-color: #EFEEF0;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+/* Footer css */
+
+#footer__section{
+    background-color: #181616;
+    color: #F8F8F3;
+}
+
+.footer__icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.footer__icons > .icons > a{
+    text-decoration: none;
+    color: #F8F8F3;
+    padding: 0rem 1rem;
+}
+
+.footer__icons > .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__icons > .logo > li{
+    list-style: none;
+}
+
+.footer__icons > .logo > li > a{
+    text-decoration: none;
+    color:#F8F8F3;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.foot__info{
+    padding: 0rem 1rem;
+}
+
+.foot__info > h1{
+    font-size: 1rem;
+    padding: 0rem 1rem;
+}
+
+.foot__info > ul >li {
+    list-style: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.copyright > p > a{
+    color: #EFEEF0;
+}
+
+
 
 /* Media Query */
 
@@ -296,4 +372,43 @@
         max-width: 30%;
     }
 
+    /* CTA__section */
+
+    #cta__section{
+        position: relative;
+        display: flex;
+        margin: 10rem 0rem 0rem 0rem ;
+    }
+
+    .cta__writeup, .cta__img{
+        width: 50%;
+    }
+
+    .cta__img > img{
+       width: 100%;
+       margin-top: -11rem;
+    }
+
+    /* Footer css */
+
+    .footer__icons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__icons > .logo{
+        padding: 0rem 1rem;
+    }
+
+    .copyright{
+        flex-direction: row;
+    }
+
+    .copyright > p {
+        padding: 0rem 1rem;
+    }
+
+    .foot__info{
+        width: 30%;
+    }
 }
