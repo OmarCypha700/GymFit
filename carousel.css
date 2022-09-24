@@ -1,0 +1,158 @@
+/* Carousel css */
+
+#quotes__section{
+    padding: 2rem 0 3rem 0;
+}
+
+#quotes__section > h1{
+    padding: 1rem;
+}
+
+.quote__icon{
+    color: #EFEEF0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    font-size: 3rem;
+    
+}
+
+.carousel {
+    position: relative;
+    padding: 10rem 1rem;
+}
+
+.carousel > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 300ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide[data-active]{
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.slide__card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EFEEF0;
+    border-radius: 10px;
+    background-color: #EFEEF0;
+    padding: 1rem; 
+    margin: 1rem;
+}
+
+.slide__img > img{
+    width: 40%;
+    padding: 0rem 6rem;
+    border-radius: 50%;
+}
+
+.slide__writeup > h1,h4{
+    line-height: 10px;
+}
+
+.slide__writeup > p {
+    padding: 0 0 1rem 0;
+}
+
+.mobile_carousel__btn{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    padding: 0.2rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    /* background-color:; */
+}
+
+.mobile_carousel__btn.next{
+    right: 1rem;
+}
+
+/* .carousel__btn.next:hover{
+    transform:translateX(0.5rem);
+} */
+
+.mobile_carousel__btn.prev{
+    left: 1rem;
+}
+
+/* .carousel__btn.prev{
+    transform:translateX(-0.5rem);
+} */
+
+/* .slide__img{
+    display: flex;
+    align-items: center;
+} */
+
+/* Media query */
+
+@media only screen and (min-width:760px) {
+
+    #quotes__section{
+        padding: 3rem 0 10rem 0;
+    }
+
+    .slide__card{
+        flex-direction: row;
+        align-items: center;
+        /* gap: 1rem; */
+    }
+
+    .slide__img{
+        width: 50%;
+    }
+
+    .slide__writeup{
+        width: 50%;
+    }
+
+    .slide__writeup > p{
+        font-size: 1.2rem;
+    }
+
+    .slide__img > img{
+        width: 80%;
+        padding: 0;
+        border-radius: 2%;
+    }
+
+    .desktop_carousel__btn{
+        position: absolute;
+        z-index: 1;
+        /* bottom: -50%; */
+        padding-top: 7rem;
+        background: none;
+        border: none;
+        font-size: 5rem;
+
+    }
+
+    .desktop_carousel__btn.prev{
+        right: 5rem;
+    }
+
+    .desktop_carousel__btn.next{
+        right: 1rem;
+    }
+
+}
+
+
+@media only screen and (min-width:1020px) {
+    .desktop_carousel__btn{
+        padding-top: 12rem;
+    }
+}

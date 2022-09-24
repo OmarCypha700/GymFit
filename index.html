@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="carousel.css">
     <title>GymFit</title>
 </head>
 
@@ -137,7 +138,7 @@
 
   </section>
 
-  <section id="shop__section">
+  <section aria-label="Shop" id="shop__section">
 
     <div class="shop__header">
 
@@ -187,8 +188,84 @@
 
   </section>
 
-  <section id="quotes__section">
-    
+  <section aria-label="Quotes from current gymfitters" id="quotes__section">
+
+    <h1>QUOTES FROM CURRENT GYMFITTERS</h1>
+
+    <div class="quote__icon"><iconify-icon icon="fa-solid:quote-right"></iconify-icon></div>
+
+    <div class="carousel" data-carousel>
+
+      <div class="desktop__hidden">
+        <button class="mobile_carousel__btn prev" data-carousel-button="prev"><iconify-icon icon="bi:arrow-left-circle"></iconify-icon></button>
+        <button class="mobile_carousel__btn next" data-carousel-button="next"><iconify-icon icon="bi:arrow-right-circle"></iconify-icon></button>
+      </div>
+
+      <div class="mobile__hidden">
+        <button class="desktop_carousel__btn prev" data-carousel-button="prev"><iconify-icon icon="bxs:chevron-left-square"></iconify-icon></button>
+        <button class="desktop_carousel__btn next" data-carousel-button="next"><iconify-icon icon="bxs:chevron-right-square"></iconify-icon></button>
+      </div>
+       
+
+      <ul data-slides>
+
+        <li class="slide" data-active>
+
+          <div class="slide__card">
+            <div class="slide__img">
+              <img src="./images/avi/avi1.jpg" alt="">
+            </div>
+            <div class="slide__writeup">
+              <p>Initially when i started my fitness journey, i was so lost, didn’t even know where to begin, my friend introduced me to gymfit and it has been amazing so far. I have been able to hit my initial goals and currently living healthier. </p>
+              <h1>Joseph Jackeman</h1>
+              <p>Freelancer</p>
+            </div>
+          </div>
+          
+        </li>
+
+        <li class="slide">
+          <div class="slide__card">
+            <div class="slide__img">
+              <img src="./images/avi/avi2.jpg" alt="">
+            </div>
+            <div class="slide__writeup">
+              <p>Initially when i started my fitness journey, i was so lost, didn’t even know where to begin, my friend introduced to gymfit and it has been amazing so far. I have been able to hit my initial goals and currently living healthier. </p>
+              <h1>Augustine Walker</h1>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="slide__card">
+            <div class="slide__img">
+              <img src="./images/avi/avi3.jpg" alt="">
+            </div>
+            <div class="slide__writeup">
+              <p>Initially when i started my fitness journey, i was so lost, didn’t even know where to begin, my friend introduced to gymfit and it has been amazing so far. I have been able to hit my initial goals and currently living healthier. </p>
+              <h1>Micheal Foster</h1>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="slide__card">
+            <div class="slide__img">
+              <img src="./images/avi/avi4.jpg" alt="">
+            </div>
+            <div class="slide__writeup">
+              <p>Initially when i started my fitness journey, i was so lost, didn’t even know where to begin, my friend introduced to gymfit and it has been amazing so far. I have been able to hit my initial goals and currently living healthier. </p>
+              <h1>James Cliford</h1>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
   </section>
 
   <section id="membership__section">
@@ -353,5 +430,6 @@
 
 <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 <script src="Navbar.js"></script>
+<script src="carousel.js"></script>
 
 </html>

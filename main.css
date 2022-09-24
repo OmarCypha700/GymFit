@@ -92,9 +92,7 @@
 
 /* Shop section css */
 
-.mobile__hidden{
-    display: none;
-}
+
 
 
 #shop__section{
@@ -128,11 +126,11 @@
 /* Membership section css */
 
 #membership__section{
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 #membership__section > h1 {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .payments{
@@ -334,20 +332,12 @@
 
     /* Shop section css */
 
-    .desktop__hidden{
-        display: none;
-    }
-
     .products{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         row-gap: 1rem;
-    }
-
-    .mobile__hidden{
-        display: block;
     }
 
     .shop__header{

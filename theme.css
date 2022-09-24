@@ -6,3 +6,17 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.mobile__hidden{
+    display: none;
+}
+
+@media only screen and (min-width:760px) {
+    .mobile__hidden{
+        display: block;
+    }  
+
+    .desktop__hidden{
+        display: none;
+    }
+}
