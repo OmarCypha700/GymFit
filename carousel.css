@@ -1,7 +1,7 @@
 /* Carousel css */
 
 #quotes__section{
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 0 6rem 0;
 }
 
 #quotes__section > h1{
@@ -14,7 +14,6 @@
     justify-content: flex-end;
     padding: 0 1rem;
     font-size: 3rem;
-    
 }
 
 .carousel {
@@ -51,6 +50,11 @@
     margin: 1rem;
 }
 
+.slide__num{
+    font-size: 1rem;
+    color:#929292;
+}
+
 .slide__img > img{
     width: 40%;
     padding: 0rem 6rem;
@@ -73,29 +77,15 @@
     background: none;
     border: none;
     font-size: 2rem;
-    /* background-color:; */
 }
 
 .mobile_carousel__btn.next{
     right: 1rem;
 }
 
-/* .carousel__btn.next:hover{
-    transform:translateX(0.5rem);
-} */
-
 .mobile_carousel__btn.prev{
     left: 1rem;
 }
-
-/* .carousel__btn.prev{
-    transform:translateX(-0.5rem);
-} */
-
-/* .slide__img{
-    display: flex;
-    align-items: center;
-} */
 
 /* Media query */
 
@@ -108,7 +98,11 @@
     .slide__card{
         flex-direction: row;
         align-items: center;
-        /* gap: 1rem; */
+    }
+
+    .slide__num{
+        font-size: 1.5rem;
+        color:#929292;
     }
 
     .slide__img{
@@ -132,12 +126,10 @@
     .desktop_carousel__btn{
         position: absolute;
         z-index: 1;
-        /* bottom: -50%; */
         padding-top: 7rem;
         background: none;
         border: none;
         font-size: 5rem;
-
     }
 
     .desktop_carousel__btn.prev{
