@@ -7,6 +7,10 @@ body{
     margin: 0 auto;
 }
 
+button{
+    cursor: pointer;
+}
+
 .mobile__hidden{
     display: none;
 }
