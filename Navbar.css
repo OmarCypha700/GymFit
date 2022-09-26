@@ -128,6 +128,7 @@
     }
 
     .menu, #close {
+        padding: 1rem;
         display: initial;
         position: absolute;
         top: -1rem;
